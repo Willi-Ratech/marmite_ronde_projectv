@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    
+
+        
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    
+    <body>
+        
+       {{include("navbar.html.twig")}}
+       
+
+        <h1></h1>
+        {% block body %}{% endblock %}
+    </body>
+</html>
+
+

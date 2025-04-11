@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello detailController!{% endblock %}
+
+{% block body %}
+<a href="{{ path('recipe_par_categorie', {'categoryId': recipe.category.id}) }}" class="btn btn-primary"> </a>
+
+{% endblock %}

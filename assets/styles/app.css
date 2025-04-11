@@ -1,0 +1,279 @@
+body {
+    /* background-color: rgb(6, 65, 105) */
+    /* background-color: teal; */
+}
+
+.c-item{
+height: 350px;
+}
+
+.w-img{
+filter: brightness(0.9);
+}
+
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+
+
+
+
+
+  .col-10{
+    background-color:goldenrod
+  }
+  
+
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+  html {
+    font-family: Arial;
+    font-size: 16px;
+    background: #5e42a6;
+  }
+  
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #312450;
+    font-size: 0.65em;
+  }
+  
+  .nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  
+  .nav ul {
+    list-style: none;
+    
+    li {
+      position: relative;
+      margin: 3.2em 0;
+      
+      a {
+        line-height: 5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.4em;
+        color: rgba(#FFF, 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+      }
+      
+      &.active a {
+        color: white;
+      }
+      
+      &:not(.active)::after {
+        opacity: 0.2;
+      }
+      
+      &:not(.active):hover a {
+        color: rgba(#FFF, 0.75);
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #5e42a6, #b74e91)
+      }
+    }
+  }
+  
+  .twitter {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    a {
+      position: relative;
+      
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    
+    p {
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      color: #FFF;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  }
+
+
+
+
+  
+/* public/css/form.css */
+
+.form-wrapper {
+  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: 20px auto; /* Centre le formulaire sur la page avec une marge en haut */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-wrapper p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  display: flex; /* Utilise Flexbox pour aligner label et champ */
+  align-items: center; /* Centre verticalement les éléments */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex-basis: 120px; /* Largeur fixe pour les labels (ajustez) */
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group > div { /* Cibler le div contenant le widget du formulaire */
+  flex-grow: 1; /* Le champ prend l'espace restant */
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+  font-size: 1em;
+}
+
+/* Style spécifique pour le champ select (complication) */
+.form-control select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.submit-button {
+  display: block; /* Centre le bouton */
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Couleur bleue (ajustez) */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  width: fit-content; /* Ajuste la largeur au contenu */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: block; /* Assure que l'erreur prend toute la largeur */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
